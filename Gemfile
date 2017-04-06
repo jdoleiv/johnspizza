@@ -56,3 +56,6 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'rails_12factor', group: :production
 gem 'rubocop', '~> 0.47.1', require: false
 gem 'devise'
+gem 'figaro'
+
+
