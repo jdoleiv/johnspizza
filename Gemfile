@@ -57,5 +57,5 @@ gem 'rails_12factor', group: :production
 gem 'rubocop', '~> 0.47.1', require: false
 gem 'devise'
 gem 'figaro'
-
+gem 'stripe'
 
