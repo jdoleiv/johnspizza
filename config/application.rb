@@ -1,3 +1,5 @@
+# rubocop:disable LineLength
+
 require_relative 'boot'
 
 require 'rails/all'
