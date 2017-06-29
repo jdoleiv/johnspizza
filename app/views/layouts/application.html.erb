@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Johnspizza</title>
+  <title>JohnsPizza</title>
   <%= csrf_meta_tags %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
 </head>
 
 <body>
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <a class="navbar-brand" href="#">John's Pizza</a>
-
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded text-center">
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-    </ul>
+      <a href="https://www.ubereats.com/singapore/" target="_blank">
+      <img src="/assets/logo2.png" class="logo" alt="John's Pizza" width="160" height="160">
+      <a href="https://www.ubereats.com/singapore/" target="_blank">
+      <img src="/assets/uberbluelong.png" class="logo" alt="Uber Eats" width="550" height="100">
+      <a href="https://www.ubereats.com/singapore/" target="_blank">
+      <img src="/assets/logo2.png" class="logo" alt="John's Pizza" width="160" height="160">
   </div>
 </nav>
 
@@ -34,5 +30,32 @@
 <% end %>
 
 <%= yield %>
+
+<br class="clr" />
+
+<div id="footer">
+  <div class="container">
+    <div class="col-xs-12 col-sm-3">
+      <b>Contact</b>
+      <br />
+      johnspizzasg@gmail.com
+      <br />
+      Singapore
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+      <b>Social</b>
+      <br />
+      <%= link_to 'https://www.facebook.com/johnspizzasg/' do %>
+        <%= image_tag 'facebook.png', class: 'social-button' %>
+      <% end %>
+      <%= link_to 'https://twitter.com/johnspizzasg' do %>
+        <%= image_tag 'twitter.png', class: 'social-button' %>
+      <% end %>
+      <%= link_to 'https://www.instagram.com/johnspizzasg/' do %>
+        <%= image_tag 'instagram.png', class: 'social-button' %>
+      <% end %>
+    </div>
+  </div>
+</div>
 </body>
 </html>

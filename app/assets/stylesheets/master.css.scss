@@ -1,15 +1,28 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
 .navbar {
-  font-family: 'Jim Nightshade', cursive;
+  font-family: 'Black Ops One', cursive;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
+  background:url('/assets/grey_wash_wall.png');
+  position: fixed;
+  top: 0;
+  width:100%;
+}
+
+.break {
+  color: white;
+}
+
+.navbar a {
+    color: white;
 }
 
 .navbar-inverse a.navbar-brand {
-  font-family: 'Jim Nightshade', cursive;
+  font-family: 'Black Ops One', cursive;
   font-weight: 100;
-  color: tan;
+  color: white;
 }
 
 .hero {
@@ -18,12 +31,44 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 900px;
+  height: 530px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+  margin-top: 160px;
+}
+
+.hero2 {
+  background: image_url('hero2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.hero3 {
+  background: image_url('hero3.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.hero4 {
+  background: image_url('hero4.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700px;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
+  font-family: 'Black Ops One', cursive;
 }
 
 .frosty {
@@ -31,18 +76,58 @@ h1, h2, h3, h4, h5, h6, .navbar {
   color: white;
 }
 
+.frosty a {
+  color: white;
+}
+
 .frosty h1 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Black Ops One', cursive;
   font-weight: 100;
   text-shadow: rgba(0,0,0,0.95) 1px 1px;
 }
 
 .frosty h2 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Black Ops One', cursive;
   font-weight: 200;
   text-shadow: rgba(0,0,0,0.95) 1px 1px;
 }
 
 .btn {
   border-radius: 0;
+}
+
+ul {
+      list-style-type: none;
+}
+
+ul .header {
+  font-size:25px;
+}
+
+ul .header .glyphicon {
+  font-size:20px;
+}
+
+body {
+  background: url('/assets/grey_wash_wall.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin:10px;
+}
+
+.clr {
+  clear:both;
 }
